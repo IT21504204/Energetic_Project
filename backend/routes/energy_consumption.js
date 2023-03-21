@@ -24,6 +24,33 @@ router.route('/').get((req, res) => {
         console.log(err);
     });
 });
+// update deatails
+router.route('/update/:id').post(async(req, res) => {
+    let userid = req.params.id;
+    const{ owner_name, home_address } = req.body;
+    const updateEnergyConsumption = {
+        owner_name,
+        home_address,
+    }
+    const update = await EnergyConsumption.findByIdAndUpdate(userid, updateEnergyConsumption).then(() => {
+ res.status(200).send({status: "Energy Consumption updated"})
+    }).catch((err) => {
+      console.log(err);
+        res.status(500).send({status: "Error with updating data" , error: err.message});
+    })
+})
 
+// delete details
+router.route("/delete/:id").delete(async(req, res) => {
+ let userid = req.params.id;
+ await EnergyConsumption.findByIdAndDelete(userid)
+ .then(() => {
+        res.status(200).send({status: "Energy Consumption deleted"});
+ })
+    .catch((err) => {
+        console.log(err.message);
+        res.status(500).send({status: "Error with deleting data" , error: err.message});
+    })
 
+})
 module.exports=router;
