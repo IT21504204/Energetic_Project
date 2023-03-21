@@ -12,6 +12,7 @@ const energyConsumptionSchema = new Schema({
     },
 })
 
+
 const EnergyConsumption = mongoose.model('EnergyConsumption', energyConsumptionSchema);
 
 module.exports = EnergyConsumption;
