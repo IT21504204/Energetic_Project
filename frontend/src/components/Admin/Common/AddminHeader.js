@@ -1,8 +1,8 @@
 import React from "react";
-import imgprofile from "../img/undraw_profile.svg";
-import imgprofile1 from "../img/undraw_profile_1.svg";
-import imgprofile2 from "../img/undraw_profile_2.svg";
-import imgprofile3 from "../img/undraw_profile_3.svg";
+import imgprofile from "../../../assets/img/undraw_profile.svg";
+import imgprofile1 from "../../../assets/img/undraw_profile_1.svg";
+import imgprofile2 from "../../../assets/img/undraw_profile_2.svg";
+import imgprofile3 from "../../../assets/img/undraw_profile_3.svg";
 function AdminHeader() {
     return (
         <nav className="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">

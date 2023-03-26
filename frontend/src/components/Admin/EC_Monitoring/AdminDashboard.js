@@ -1,9 +1,9 @@
-import AdminHeader from "./AddminHeader";
+import AdminHeader from "../Common/AddminHeader";
 import AdminCards from "./AdminCards";
 import AdminEnergyConsumption from "./AdminEnergyConsumption";
 import AdminEnergyConsumptionMap from "./AdminEnergyConsumptionMap";
-import AdminFooter from "./AdminFooter";
-import AdminNavigation from "./AdminNavigation";
+import AdminFooter from "../Common/AdminFooter";
+import AdminNavigation from "../Common/AdminNavigation";
 
 function AdminDashboard() {
     return (

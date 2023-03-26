@@ -1,11 +1,11 @@
-import './App.css';
-import './icons.css';
-import './main.css';
+import './assets/css/App.css';
+import './assets/css/icons.css';
+import './assets/css/main.css';
 
-import Login from './components/Login';
-import Register from './components/Register';
+import Login from './components/Authentication/Login';
+import Register from './components/Authentication/Register';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import AdminDashboard from './components/AdminDashboard';
+import AdminDashboard from './components/Admin/EC_Monitoring/AdminDashboard';
 function App() {
   return (
     <Router>

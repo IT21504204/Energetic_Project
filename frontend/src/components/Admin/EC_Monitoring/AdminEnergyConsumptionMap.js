@@ -2,13 +2,12 @@ import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { Icon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import '../map.css';
-
+import '../../../assets/css/map.css';
 
 
 const position = [6.927079, 79.861244]
 const customIcon = new Icon({
-    iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css',
+    iconUrl: require("../../../assets/img/map_icon.png"),
     iconSize: [33, 33]
 });
 
@@ -33,7 +32,7 @@ function AdminEnergyConsumptionMap() {
                                     icon={customIcon}
                                 >
                                     <Popup>
-                                        🐻🍻🎉
+                                        Tiger, Wariyapola🐻🍻🎉
                                     </Popup>
                                 </Marker>
                             </MapContainer>
