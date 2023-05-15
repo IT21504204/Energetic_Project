@@ -27,11 +27,13 @@ connection.once('open', () => {
 const energyConsumptionRouter = require('./routes/energy_consumption');
 const userRouter = require('./routes/user');
 // const mentorRouter = require('./routes/mentor');
+const salesRouter = require('./routes/sales');
 
 app.use("/energy_consumption", energyConsumptionRouter);
 app.use("/user", userRouter);
 
 // app.use("/mentor", mentorRouter);
+app.use("/sales", salesRouter)
 
 app.listen(PORT, () => {
     console.log(`Server is running on port: ${PORT}`);
