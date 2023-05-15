@@ -1,7 +1,9 @@
 import React from 'react';
+import $ from 'jquery';
 
 function AdminNavigation() {
     return (
+
         <ul className="navbar-nav bg-gradient-orange sidebar sidebar-dark accordion" id="accordionSidebar">
 
             {/* <!-- Sidebar - Brand --> */}
@@ -66,11 +68,11 @@ function AdminNavigation() {
             {/* <!-- Divider --> */}
             <hr className="sidebar-divider d-none d-md-block"></hr>
 
-            {/* <!-- Sidebar Toggler (Sidebar) --> */}
             <div className="text-center d-none d-md-inline">
                 <button className="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
         </ul>
+        
     )
 }
 

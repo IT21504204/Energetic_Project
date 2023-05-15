@@ -18,11 +18,11 @@ function AdminDashboard() {
                             <a href="#" className="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 className="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                         </div>
-                        <AdminCards/>
-                        <AdminEnergyConsumptionMap/>
-                        <AdminEnergyConsumption/>
+                        <AdminCards />
+                        <AdminEnergyConsumptionMap />
+                        <AdminEnergyConsumption />
                     </div>
-                    <AdminFooter/>
+                    <AdminFooter />
                 </div>
             </div>
         </div>
