@@ -24,9 +24,9 @@ connection.once('open', () => {
     console.log("MongoDB database connection established successfully");
 });
 
-const energyConsumptionRouter = require('./routes/energy_consumption');
+const billPredictionRoute= require("./routes/bill_prediction.js");
 
-app.use("/energy_consumption", energyConsumptionRouter);
+app.use("/bill_prediction", billPredictionRoute);
 
 app.listen(PORT, () => {
     console.log(`Server is running on port: ${PORT}`);
